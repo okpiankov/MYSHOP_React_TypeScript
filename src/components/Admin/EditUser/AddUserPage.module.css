@@ -1,0 +1,65 @@
+.contentBox {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    font-size: 19px;
+ }
+.patternWrap {
+    height: auto;
+    width: 500px;
+    background-color: var(--background-color-contentLight);
+    border: var(--border-content);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-indent: 20px;
+    gap: 10px;
+}
+.editProductWrap {
+    height: 430px;
+    width: 500px;
+    background-color: var(--background-color-contentLight);
+    border: var(--border-content);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.inputWrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px; 
+}
+.input {
+    background-color: var(--background-color-contentLight);
+    height: 30px;
+    width: 450px;
+    border: 2px var(--background-color-contentLarge) solid;
+    outline:none;
+    
+}
+.buttonSubmit {
+    height: 40px;
+    width: 250px;
+    border-radius: 10px;
+    align-self: center;
+    background-color: var(--background-color-contentMedium);
+    border: 2px var(--background-color-contentLarge) solid;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+.buttonSubmit:hover {
+    background-color: var(--background-color-contentLarge);
+}
+
+
+

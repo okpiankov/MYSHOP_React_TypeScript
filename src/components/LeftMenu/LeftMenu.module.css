@@ -1,0 +1,115 @@
+.leftMenuWrap {
+    /* width: 150px; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 100px;
+    background-color: var(--background-color-contentMedium);
+    height: auto;
+    margin-top: 4px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* border: 1px black solid; */
+    box-shadow:  var(--box-shadow-content); 
+    font-size: 21px;
+    position: relative;
+}
+
+.popUpMenu {
+    height: 100%;
+    width: 150px;
+    background: var(--background-color-contentMedium);
+    /* border: 1px solid red; */
+    box-shadow:  var(--box-shadow-content);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 5px;
+    /* padding-top: 20px; */
+    gap: 50px;
+    
+    
+    position: absolute;
+    /* top: 84px; */
+    top: 0;
+    
+    
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease-in-out;
+    
+     transform: translateX(300%);
+     transition: transform .3s ease-in-out;
+}
+
+.link {
+    text-indent: 10px;
+    
+}
+.link:hover {
+    background-color: var(--background-color-contentLarge);
+    border-radius: 7px;
+    color: #FFFFFF;
+    transform: scale(1.1);
+}
+.link:hover ~ .popUpMenu {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateX(150px);
+}
+.popUpMenu:hover {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateX(150px);
+}
+.phone,.laptop,.tv,.all {
+    text-indent: 10px;
+    border-radius: 10px;
+    box-shadow: inset 3px -3px 2px var(--background-color-contentLarge),
+    inset 3px 3px 2px var(--background-color-contentLarge);
+    width: 100%;
+}
+.popUpMenu .all{
+    margin-top: 20px;
+}
+@media (max-width: 991px) {
+    /* .popUpMenu {
+        top: 144px;
+    } */
+    .popUpMenu {
+        width: 120px;
+    }
+    .link:hover ~ .popUpMenu {
+        transform: translateX(120px);
+    }
+    .popUpMenu:hover {
+        transform: translateX(120px);
+    }
+    /* .phone,.laptop,.tv,.all {
+        width: 120px;
+    } */
+}
+@media (max-width: 430px) {
+    /* .popUpMenu {  
+        top: 124px;
+    } */
+    .popUpMenu {
+        transform: translateX(150%);
+    }
+    .link:hover ~ .popUpMenu {
+        transform: translateX(-5px);
+    }
+    .popUpMenu:hover {
+        transform: translateX(-5px);
+    }
+    .link:hover {
+        transform: none;
+        transform: scale(1.0);
+    }
+    .phone,.laptop,.tv,.all {
+        width: 120px;
+        font-size: 19px;
+        text-indent: 5px;
+    }
+}

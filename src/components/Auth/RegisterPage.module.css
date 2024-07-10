@@ -1,0 +1,99 @@
+.authWrap {
+    height: 600px;
+    width: 400px;
+    border-radius: 20px;
+    border: var(--border-content);
+    background-color: var(--background-color-contentLight);
+    /* margin-top: 70px;
+    margin-left: 250px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /* padding-top: 50px; */
+    /* gap: 70px; */
+    
+}
+.inputWrap {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+
+    gap: 50px;
+    width: 350px;
+}
+.input {
+    background-color: var(--background-color-contentLight);
+    border-style: none;
+    border-bottom: 1px red solid;
+    outline:none;
+    font-size: 20px;
+}
+.buttonSubmit {
+    height: 40px;
+    width: 270px;
+    border-radius: 10px;
+    align-self: center;
+    background-color: var(--background-color-contentMedium);
+    border: 3px var(--background-color-contentLarge) solid;
+    color: white;
+    font-size: 23px;
+    font-weight: 700;
+}
+.buttonSubmit:hover {
+    background-color: var(--background-color-contentLarge);
+}
+.selectАctive {
+    font-size: 25px;
+    color: rgb(163, 160, 160);
+    text-decoration: none;
+    display: inline-block;
+    border-style: none;
+    background-color: transparent;
+}
+.select {
+    font-size: 25px;
+    display: inline-block;
+}
+.close {
+    color: #000000;
+    font-size: 24px;
+    position: relative;
+    left: 170px;
+    bottom: 44px;
+    border-style: none;
+    background-color: var(--background-color-contentLight);
+    }
+    .registration {
+        color: blue;
+        font-size: 27px;
+        font-weight: 700;
+    } 
+
+@media (max-width: 430px) {
+        .authWrap {
+            height: 400px;
+            width: 280px;
+        }
+        .inputWrap {
+            gap: 20px;
+            width: 230px;
+        }
+        .buttonSubmit {
+            width: 240px;
+            font-size: 20px;
+            
+        }
+        .input {
+            font-size: 18px;
+        }
+        .registration {
+            color: blue;
+            font-size: 21px;
+            font-weight: 700;
+        }
+        .select, .selectАctive {
+            font-size: 23px;
+        } 
+
+}

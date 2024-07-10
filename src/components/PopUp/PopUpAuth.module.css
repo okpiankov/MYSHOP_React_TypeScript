@@ -1,0 +1,49 @@
+.popup {
+    /* popup невидимый самый нижний слой подложка */
+    /* background-color: red; */
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    /* top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px; */
+    inset:  0px;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 999;
+    transition: opacity .2s ease-in-out;
+}
+.popup_visible {
+    opacity: 1;
+    pointer-events: all;
+}
+/* Чтобы форму вывести на самый верхний слой устан. z-index: 1;*/
+.popup_content {
+    margin-top: 100px;
+    z-index: 1;
+}
+/*overlay средний слой  */
+.popup_overlay {
+    position: absolute;
+    background-color: black;
+    opacity: 0.6;
+    inset:  0px;
+}
+.close {
+    position: relative;
+    left: 405px;
+    color: #000000;
+    font-size: 27px;
+    border-style: none;
+    background-color: transparent;
+}
+@media (max-width: 360px) {
+    .close {
+        left: 135px;
+    }
+    .popup_content {
+        margin-top: 150px;
+        
+    }
+} 

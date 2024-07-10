@@ -1,0 +1,65 @@
+.productsWrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* flex-direction: row; */
+    text-decoration: none;
+    margin-top: 10px;
+}
+.cardWrap {
+    height: 377px;
+    width: 255px;
+    margin: 5px;
+    background-color: var(--background-color-contentLight);
+    border: var(--border-content);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+    /* gap: 10px; */
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+.image {
+    height: 255px;
+    width: 255px;
+    border: var(--border-content);
+    border-radius: 15px;
+    text-decoration: none;
+    
+}
+ .button {
+    height: 30px;
+    width: 255px;
+    border-radius: 15px;
+    text-decoration: none;
+    background-color: var(--background-color-contentMedium);
+    border: var(--border-content);
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+.button:hover {
+    background-color: var(--background-color-contentLarge);
+}
+.isLoadingButton {
+    height: 30px;
+    width: 255px;
+    border-radius: 15px;
+    text-decoration: none;
+    background-color: rgb(255, 207, 207);
+    border: var(--border-content);
+    color: rgb(253, 137, 137);
+    font-size: 20px;
+    font-weight: 700;
+}
+.center {
+    text-align: center;
+}
+.link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;  
+}

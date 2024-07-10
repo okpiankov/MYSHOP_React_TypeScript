@@ -1,0 +1,79 @@
+.order {
+  height: auto;
+  width: auto;
+  border-radius: 15px;
+  margin-top: 10px;
+  margin-left: 5px;
+  box-shadow:  var(--box-shadow-content);
+  background-color: var(--background-color-contentLight);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-size: 20px;
+  gap: 10px;
+}
+.inputWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.order_goods {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.message {
+  padding: 5px 20px;
+  color: white;
+}
+.messageError {
+  background-color: red;
+}
+.messageSuccess {
+  background-color: green;
+}
+.input {
+  background-color: var(--background-color-contentLight);
+  height: 29px;
+  width: 350px;
+  border: 2px var(--background-color-contentLarge) solid;
+  outline:none;
+}
+.inputQuantity {
+  background-color: var(--background-color-contentLight);
+  height: 29px;
+  width: 100px;
+  border: 2px var(--background-color-contentLarge) solid;
+  outline:none;
+}
+.button {
+  height: 35px;
+  width: auto;
+  /* border-radius: 15px; */
+  text-decoration: none;
+  background-color: var(--background-color-contentMedium);
+  border: var(--border-content);
+}
+.button2 {
+  height: 42px;
+  width: 200px;
+  font-size: 21px;
+  font-weight: 600;
+  /* border-radius: 15px; */
+  text-decoration: none;
+  background-color: var(--background-color-contentMedium);
+  border: var(--border-content);
+}
+
+.button:hover {
+  background-color: var(--background-color-contentLarge);
+  color: white;
+}
+.button2:hover {
+  background-color: var(--background-color-contentLarge);
+  color: white;
+}
+

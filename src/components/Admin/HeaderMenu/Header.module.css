@@ -1,0 +1,58 @@
+.headerMenu {
+    width: 100%;
+    /* background-color: var(--background-color-contentLight); */
+    background-color: rgb(251, 211, 137);
+    font-size: 21px;
+    box-shadow:  1px 1px 1px var(--background-color-contentLarge); 
+}
+.container {
+    /* width: 1140px;
+    margin: 0 auto; */
+    
+    /* Лучше для адаптации через фикс. или %? */
+    width: 90%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.headerMenuWrap {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* gap: 70px; */
+    height: 80px;
+    /* background-color: var(--background-color-contentMedium); */
+    background-color: orange;
+    /* border: 1px black solid; */
+    box-shadow:  var(--box-shadow-content)  
+}
+.svgButton {
+    height: 30px;
+    width: 30px;
+    color: white;
+    
+}
+.button {
+    outline: none;
+    border: none;
+    background: transparent;
+}
+
+.link {
+     
+}
+.link:hover {
+    color: #FFFFFF;
+}
+.buttonLogout {
+    height: 45px;
+    width: 90px;
+    border-radius: 15px;
+    text-decoration: none;
+    background-color: var(--background-color-contentLight);
+    border: var(--border-content);
+}
+.buttonLogout:hover {
+    /* background-color: var(--background-color-contentLarge); */
+    background-color: rgb(201, 131, 0);
+    color: white;
+}

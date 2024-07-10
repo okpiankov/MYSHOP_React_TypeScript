@@ -1,0 +1,24 @@
+.wrap {
+    height: 350px;
+    width: 350px;
+    border-radius: 15px;
+    padding-left: 10px;
+    box-shadow:  var(--box-shadow-content);
+    background-color: var(--background-color-contentLight);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 19px;
+    margin: 20px;
+}
+@media (max-width: 991px) {
+    .wrap {
+        margin-left: 8px;
+    }
+}
+@media (max-width: 430px) {
+    .wrap {
+        width: 200px;
+        margin-left: 5px;
+    }
+}

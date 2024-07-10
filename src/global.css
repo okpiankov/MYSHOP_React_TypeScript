@@ -1,0 +1,30 @@
+:root {
+  --background-color-contentLight:  rgb(235, 235, 235);
+  --background-color-contentMedium: rgb(187, 187, 187);
+  --background-color-contentLarge: rgb(120, 120, 120);
+  --box-shadow-content: 3px 3px 3px grey;
+  --border-content: 2px rgb(120, 120, 120) solid;
+    /* --background-color: ;
+    --button-background-color: ;
+    --button-background-color-hover: ;
+    --button-background-color-disabled: ;
+    --button-text-color: ;
+    --button-outlined-text-color: ;
+    --link-color: ; */
+  }
+
+  html,
+  body {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 17px;
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  button,
+input {
+  font-family: "Times New Roman", Times, serif;
+}

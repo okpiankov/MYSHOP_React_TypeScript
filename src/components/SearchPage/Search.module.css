@@ -1,0 +1,116 @@
+.formWrap {
+    display: flex;
+    width: 460px;
+    height: 45px;
+    background-color: var(--background-color-contentLarge);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    padding-right: 3px;
+}
+.search {
+   width: 400px;
+   height: 45px;
+   border-radius: 15px;
+   border: 3px var(--background-color-contentLarge) solid;
+}
+.button {
+    height: 40px;
+    width: 60px;
+    border-radius: 15px;
+    border: 1px var(--background-color-contentLarge) solid;
+    background-color: var(--background-color-contentLarge);
+}
+.button:hover {
+    background-color: var(--background-color-contentMedium);
+}
+.svgSearch {
+    height: 30px;
+    width: 30px;
+    color: white;
+}
+.notFound{
+    font-size: 21px;
+    text-align: center;
+    margin-top: 20px;
+}
+.productsWrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* flex-direction: row; */
+    text-decoration: none;
+    margin-top: 10px;
+}
+.cardWrap {
+    height: 377px;
+    width: 255px;
+    margin: 5px;
+    background-color: var(--background-color-contentLight);
+    border: var(--border-content);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+    /* gap: 10px; */
+    text-decoration: none;
+    font-family: "Times New Roman", Times, serif;
+}
+.image {
+    height: 255px;
+    width: 255px;
+    border: var(--border-content);
+    border-radius: 15px;
+    text-decoration: none;
+    
+}
+ .buttonCard {
+    height: 30px;
+    width: 255px;
+    border-radius: 15px;
+    text-decoration: none;
+    background-color: var(--background-color-contentMedium);
+    border: var(--border-content);
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+.buttonCard:hover {
+    background-color: var(--background-color-contentLarge);
+}
+.center {
+    text-align: center;
+}
+.link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;  
+}
+/* Медиа запросы */
+@media (max-width: 1140px) {
+    .formWrap {
+        width: 333px;
+    }
+}
+@media (max-width: 991px) {
+    .formWrap {
+        width: 370px;
+    }
+    
+}
+@media (max-width: 430px) {
+    .formWrap {
+        width: auto;
+        height: 40px;
+    }
+    .search {
+        height: 40px;
+        border: 2px var(--background-color-contentLarge) solid;
+        font-size: 19px;  
+    }
+    .button {
+        height: 37px;
+    }
+}

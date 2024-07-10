@@ -1,0 +1,334 @@
+.headerMenu {
+    width: 100%;
+    background-color: var(--background-color-contentLight);
+    font-size: 21px;
+    box-shadow:  1px 1px 1px var(--background-color-contentLarge);
+    position: sticky;
+    top: 0;
+    z-index: 55; 
+}
+
+.container {
+    /* width: 1140px;
+    margin: 0 auto; */
+    
+    /* Лучше для адаптации через фикс. или %? */
+    width: 90%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.headerMenuWrap {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* gap: 70px; */
+    height: 80px;
+    background-color: var(--background-color-contentMedium);
+    /* border: 1px black solid; */
+    box-shadow:  var(--box-shadow-content);
+    
+}
+.burger {
+  opacity: 0;
+  pointer-events: none;
+  display: none;
+}
+.countCart {
+    display: flex;
+    height: auto;
+    align-items: center;
+}
+.svgCart {
+    height: 45px;
+    width: 45px;
+    color: white;
+}
+.svgCart:hover {
+  color:green;
+}
+.count {
+  font-size: 17px;
+  height: 20px;
+  width: 20px;
+  border-radius: 10px;
+  background-color: red;
+  text-align: center;
+  color: white;
+  font-weight: 500;
+  position: absolute;
+  margin-left:  25px;
+  margin-bottom: 40px;
+}
+.svgButton {
+    height: 30px;
+    width: 30px;
+    color: white;
+    
+}
+.svgButton:hover {
+  color:green;
+}
+.LogInButton {
+    height: 30px;
+    width: 30px;
+    color: green;
+}
+.button {
+    outline: none;
+    border: none;
+    background: transparent;
+}
+.svgTel {
+    height: 28px;
+    width: 28px;
+    color: red;
+}
+.svgMenu {
+  height: 33px;
+  width: 33px;
+  color: white;
+}
+.svgMenu:hover {
+  color:green;
+}
+.svgHome {
+  height: 33px;
+  width: 33px;
+  color: white;
+}
+.svgHome:hover {
+  color: green;
+}
+.svgPay {
+  height: 33px;
+  width: 33px;
+  color: white;
+}
+.svgPay:hover {
+  color: green;
+}
+.svgDelivery {
+  height: 33px;
+  width: 33px;
+  color: white;
+}
+.svgDelivery:hover {
+  color: green;
+}
+.link {
+     
+}
+.link:hover {
+    color: #FFFFFF;
+}
+.buttonLogout {
+    height: 45px;
+    width: 80px;
+    border-radius: 15px;
+    text-decoration: none;
+    background-color: var(--background-color-contentLight);
+    border: var(--border-content);
+}
+.buttonLogout:hover {
+  background-color: var(--background-color-contentLarge);
+  color: white;
+}
+/* Скрытое хедерменю  для адаптации для смартфонов */
+.headerMenuPhone {
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  background-color: var(--background-color-contentLight);
+  box-shadow:  1px 1px 1px var(--background-color-contentLarge);
+
+}
+/* Медиа запросы */
+@media (max-width: 991px) {
+  .headerMenuWrap {
+      height: 140px;
+      display: grid;
+      grid-template-columns: repeat(7,1fr);
+      grid-template-rows: 70px 70px;
+      padding-left: 7px;
+      box-sizing: border-box;
+      grid-template-areas:
+      "поиск поиск поиск поиск поиск телефон телефон"
+      "бургер главная оплата доставка иконка кнопка корзина";
+      
+  }
+    .item1 {
+      grid-area: поиск;
+      grid-column: span 5;
+      grid-row: 1;
+    }
+    .item2 {
+      grid-area: телефон;
+      grid-column: span 2;
+      grid-row: 1;
+    }
+    .item3 {
+      grid-area: бургер;
+      grid-column: span 1;
+      grid-row: 2;
+      opacity: 1;
+      pointer-events: all;
+      display: block;
+    }
+    .item4 {
+      grid-area: главная;
+      grid-column: span 1;
+      grid-row: 2;
+    }
+    .item5 {
+      grid-area: оплата;
+      grid-column: span 1;
+      grid-row: 2;
+    }
+    .item6 {
+      grid-area: доставка;
+      grid-column: span 1;
+      grid-row: 2;
+    }
+    .item7 {
+      grid-area: иконка;
+      grid-column: span 1;
+      grid-row: 2;
+    }
+    .item8 {
+      grid-area: кнопка;
+      grid-column: span 1;
+      grid-row: 2;
+    }
+    .item9 {
+      grid-area: корзина;
+      grid-column: span 1;
+      grid-row: 2;
+    }
+   
+}
+@media (max-width: 430px) {
+  .headerMenu {
+    opacity: 0;
+    pointer-events: none;
+  }
+  .headerMenuPhone {
+    opacity: 1;
+    pointer-events: all;
+    position: absolute;
+    margin-top: 0px;
+    width: 100%;
+  }
+  .headerMenuWrap {
+    height: 120px;
+    display: grid;
+    width: auto;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: 40px 40px 40px;
+    /* padding-left: 7px;
+    padding-right: 57px; */
+    box-sizing: border-box;
+    row-gap: 1px;
+    column-gap: 7px;
+    grid-template-areas:
+    "телефон телефон телефон телефон кнопка кнопка"
+    "поиск поиск поиск поиск поиск поиск" 
+    "бургер главная  доставка иконка корзина";
+    
+  }
+  .container {
+    width: 90%;
+  }
+  
+  .item1 {
+    grid-area: поиск;
+    grid-column: span 6;
+    grid-row: 2;
+  }
+  .item2 {
+    grid-area: телефон;
+    grid-column: span 4;
+    grid-row: 1;
+    font-size: 19px;
+  }
+  .item3 {
+    grid-area: бургер;
+    grid-column: span 1;
+    grid-row: 3;
+    opacity: 1;
+    pointer-events: all;
+    display: block;
+  }
+  .item4 {
+    grid-area: главная;
+    grid-column: span 1;
+    grid-row: 3;
+  }
+  .item5 {
+    grid-area: оплата;
+    grid-column: span 1;
+    grid-row: 3;
+  }
+  .item6 {
+    grid-area: доставка;
+    grid-column: span 1;
+    grid-row: 3;
+  }
+  .item7 {
+    grid-area: иконка;
+    grid-column: span 1;
+    grid-row: 3;
+  }
+  .item8 {
+    grid-area: кнопка;
+    grid-column: span 2;
+    grid-row: 1;
+    position: absolute;
+    margin-bottom: 77px;
+    margin-left: 210px;
+  }
+  .item9 {
+    grid-area: корзина;
+    grid-column: span 1;
+    grid-row: 3;
+  }
+  .svgMenu {
+    height: 28px;
+    width: 28px;
+  }
+  .svgMenu:hover {
+    color:green;
+  }
+  .svgHome {
+    height: 30px;
+    width: 30px;
+  }
+  .svgButton {
+    height: 27px;
+    width: 27px;
+  }
+  .svgCart {
+    height: 41px;
+    width: 41px;
+  }
+  .svgTel {
+    height: 24px;
+    width: 24px;
+  }
+  .count {
+    font-size: 15px;
+    height: 16px;
+    width: 16px;
+    border-radius: 8px;
+    position: absolute;
+    margin-bottom: 27px;
+    
+  }
+  .buttonLogout {
+    height: 35px;
+    width: 75px;
+    font-size: 19px;
+  }
+
+}

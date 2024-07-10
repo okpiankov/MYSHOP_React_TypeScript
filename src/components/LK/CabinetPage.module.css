@@ -1,0 +1,28 @@
+.cabinetPageWrap {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px;
+}
+.contentBox{
+    width: 580px;
+    background-color: var(--background-color-contentLight);
+    border-radius: 15px;
+    padding-left: 10px;
+    box-shadow:  var(--box-shadow-content);
+}
+@media (max-width: 991px) {
+    .cabinetPageWrap {
+        margin-left: 8px;
+    }
+} 
+@media (max-width: 430px) {
+    .contentBox {
+        width: 175px;
+        font-size: 15px;
+    }
+    .cabinetPageWrap {
+        margin-left: 5px;
+    }
+} 

@@ -1,0 +1,15 @@
+.adminPageWrap {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-left: 4px;
+}
+.contentBox{
+    width: 600px;
+    background-color: var(--background-color-contentLight);
+    border-radius: 15px;
+    margin-top: 10px;
+    padding-left: 10px;
+    box-shadow:  var(--box-shadow-content);
+}
